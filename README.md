@@ -1,6 +1,6 @@
 # mirror-k8s.gcr.io-ingress-nginx-controller
 
-This repo is used to build k8s.gcr.io/ingress-nginx/controller to aliyun. To help use with cn network environment.  
+This repo is used to push `k8s.gcr.io/ingress-nginx/controller` image to aliyun.  
 k8s.gcr.io/ingress-nginx/controller:v$version => registry.cn-hangzhou.aliyuncs.com/wswind/ingress-nginx-controller:$version
 
 example to use:
