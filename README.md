@@ -13,3 +13,5 @@ docker tag registry.cn-hangzhou.aliyuncs.com/wswind/ingress-nginx-controller:$ve
 
 This repo's git tag is like `release-v$version`. Aliyun will read the tag to auto build images.
 So check the tag list of this repo for supported image version list.
+
+参考：<https://blog.csdn.net/sinat_35543900/article/details/103290782>
