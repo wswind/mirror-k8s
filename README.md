@@ -12,9 +12,10 @@ docker pull registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
 docker tag registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0 k8s.gcr.io/coredns/coredns:v1.8.0
 
 #or ctr
-kubeadm config images list --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
-sudo ctr i pull registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
-sudo ctr i tag registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0 registry.cn-hangzhou.aliyuncs.com/google_containers/coredns/coredns:v1.8.0
-kubeadm config images pull --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
+ctr i pull registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
+ctr i tag registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0 registry.cn-hangzhou.aliyuncs.com/google_containers/coredns/coredns:v1.8.0
+ctr i export coredns.tar registry.cn-hangzhou.aliyuncs.com/google_containers/coredns/coredns:v1.8.0
+ctr -n=k8s.io i import coredns.tar
+ctr -n=k8s.io i ls
 ```
 
