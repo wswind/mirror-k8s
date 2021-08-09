@@ -1,12 +1,13 @@
 # mirror-k8s
 
-ÓÃÓÚÖÐ¹ú¾³ÄÚ´î½¨k8sÊ±£¬Ê¹ÓÃ°¢ÀïÔÆ¾µÏñ·þÎñ(https://cr.console.aliyun.com/)¹¹½¨È±Ê§µÄ¾µÏñ¡£
+ç”¨äºŽä¸­å›½å¢ƒå†…æ­å»ºk8sæ—¶ï¼Œä½¿ç”¨é˜¿é‡Œäº‘é•œåƒæœåŠ¡(https://cr.console.aliyun.com/)ï¼Œæä¾›ç¼ºå¤±çš„é•œåƒã€‚
 
-¶ÔÕÕÁÐ±í£º
+é•œåƒåœ°å€ä¸º`registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s`ï¼Œä¸ºèŠ‚çº¦å‘½åç©ºé—´ï¼Œä½¿ç”¨tagå­˜å‚¨ä¸åŒé•œåƒã€‚
 
-```bash
-k8s.gcr.io/ingress-nginx/controller:v0.40.2 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2
-k8s.gcr.io/coredns/coredns:v1.8.0 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
-quay.io/coreos/flannel:v0.14.0 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:flannel-v0.14.0
-```
+å¯¹ç…§åˆ—è¡¨ï¼š
+
+| origin                                      | mirror                                                       |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| quay.io/coreos/flannel:v0.14.0              | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:flannel-v0.14.0 |
+| k8s.gcr.io/ingress-nginx/controller:v0.40.2 | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2 |
 
