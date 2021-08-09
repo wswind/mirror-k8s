@@ -1,22 +1,12 @@
 # mirror-k8s
 
-This repo is used to push k8s images to aliyun.  
+用于中国境内搭建k8s时，使用阿里云镜像服务(https://cr.console.aliyun.com/)构建缺失的镜像。
 
-example to use:
+对照列表：
 
 ```bash
-docker pull registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2
-docker tag registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2 k8s.gcr.io/ingress-nginx/controller:v0.40.2
-
-docker pull registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
-docker tag registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0 k8s.gcr.io/coredns/coredns:v1.8.0
-
-#or ctr
-ctr -n=k8s.io i pull registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
-ctr -n=k8s.io i tag registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0 registry.cn-hangzhou.aliyuncs.com/google_containers/coredns/coredns:v1.8.0
-ctr -n=k8s.io i ls
-crictl -r /run/containerd/containerd.sock images
-crictl config runtime-endpoint /run/containerd/containerd.sock
-crictl images
+k8s.gcr.io/ingress-nginx/controller:v0.40.2 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2
+k8s.gcr.io/coredns/coredns:v1.8.0 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:coredns-v1.8.0
+quay.io/coreos/flannel:v0.14.0 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:flannel-v0.14.0
 ```
 
