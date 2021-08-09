@@ -1,8 +1,8 @@
 # mirror-k8s
 
-ç”¨äºŽä¸­å›½å¢ƒå†…æ­å»ºk8sæ—¶ï¼Œä½¿ç”¨é˜¿é‡Œäº‘é•œåƒæœåŠ¡(https://cr.console.aliyun.com/)æž„å»ºç¼ºå¤±çš„é•œåƒã€‚
+ÓÃÓÚÖÐ¹ú¾³ÄÚ´î½¨k8sÊ±£¬Ê¹ÓÃ°¢ÀïÔÆ¾µÏñ·þÎñ(https://cr.console.aliyun.com/)¹¹½¨È±Ê§µÄ¾µÏñ¡£
 
-å¯¹ç…§åˆ—è¡¨ï¼š
+¶ÔÕÕÁÐ±í£º
 
 ```bash
 k8s.gcr.io/ingress-nginx/controller:v0.40.2 => registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2
