@@ -9,5 +9,9 @@
 | origin                                      | mirror                                                       |
 | ------------------------------------------- | ------------------------------------------------------------ |
 | quay.io/coreos/flannel:v0.14.0              | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:flannel-v0.14.0 |
-| k8s.gcr.io/ingress-nginx/controller:v0.40.2 | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:controller-v0.40.2 |
+| k8s.gcr.io/ingress-nginx/controller:v0.45.0 | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:ingress-nginx-controller-v0.45.0 |
+| k8s.gcr.io/ingress-nginx/controller:v0.46.0 | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:ingress-nginx-controller-v0.46.0 |
+| k8s.gcr.io/ingress-nginx/controller:v0.47.0 | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:ingress-nginx-controller-v0.47.0 |
+| k8s.gcr.io/ingress-nginx/controller:v0.48.1 | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:ingress-nginx-controller-v0.48.1 |
+| k8s.gcr.io/kube-apiserver:v1.21.4           | registry.cn-hangzhou.aliyuncs.com/wswind/mirror-k8s:kube-apiserver-v1.21.4 |
 
